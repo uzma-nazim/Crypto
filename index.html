@@ -8,11 +8,9 @@
     <title>crypto</title>
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
 
 
@@ -28,7 +26,7 @@
 
     <section id="mobdiplay" class="mobilemeny">
 
-        <div class="corrc " >
+        <div class="corrc ">
             <i onclick="toggeleOff() " class="fa-solid fa-xmark"></i>
         </div>
         <br>
@@ -140,13 +138,12 @@
             <tr class="onetr">
                 <td class="asset">Asset</td>
                 <td class="lastprize">Last Prize</td>
-                <td>Today's change</td>
-                <td>Chart</td>
+                <td id="changehide">Today's change</td>
+                <td class="chart">Chart</td>
                 <td class="trade">Trade</td>
             </tr>
             <tr class="onetr">
-                <td class="asset"><img src="./images/btc.png" alt=""> &nbsp; <span class="black">BTC</span> &nbsp; <span
-                        class="gray">Bitcoin</span> </td>
+                <td class="asset"><img src="./images/btc.png" alt=""> &nbsp; <span class="black">BTC</span> &nbsp; <span class="gray">Bitcoin</span> </td>
                 <td class="lastprize"><span class="black">$39,410.10</span></td>
                 <td><span class="green">+0.61%</span></td>
                 <td class="chart"><img src="./images/ETHBUSD.svg" width="100%" alt=""></td>
@@ -158,39 +155,35 @@
                 </td>
                 <td class="lastprize"><span class="black">$39,410.10</span></td>
                 <td><span class="green">+0.61%</span></td>
-                <td><img src="./images/green.png" alt=""></td>
+                <td class="chart"><img src="./images/green.png" alt=""></td>
                 <td class="trade"><button id="buy">Buy</button></td>
             </tr>
             <tr class="onetr">
-                <td class="asset"><img src="./images/okb.png" alt=""> &nbsp; <span class="black">BTC</span> &nbsp; <span
-                        class="gray">Bitcoin</span></td>
+                <td class="asset"><img src="./images/okb.png" alt=""> &nbsp; <span class="black">BTC</span> &nbsp; <span class="gray">Bitcoin</span></td>
                 <td class="lastprize"><span class="black">$39,410.10</span></td>
                 <td><span class="red">+0.61%</span></td>
-                <td><img src="./images/green.png" alt=""></td>
+                <td class="chart"><img src="./images/green.png" alt=""></td>
                 <td class="trade"><button id="buy">Buy</button></td>
             </tr>
             <tr class="onetr">
-                <td class="asset"><img src="./images/okt.png" alt=""> &nbsp; <span class="black">BTC</span> &nbsp; <span
-                        class="gray">Bitcoin</span></td>
+                <td class="asset"><img src="./images/okt.png" alt=""> &nbsp; <span class="black">BTC</span> &nbsp; <span class="gray">Bitcoin</span></td>
                 <td class="lastprize"><span class="black">$39,410.10</span></td>
                 <td><span class="red">+0.61%</span></td>
-                <td><img src="./images/green.png" alt=""></td>
+                <td class="chart"><img src="./images/green.png" alt=""></td>
                 <td class="trade"><button id="buy">Buy</button></td>
             </tr>
             <tr class="onetr">
-                <td class="asset"><img src="./images/dot.png" alt=""> &nbsp; <span class="black">BTC</span> &nbsp; <span
-                        class="gray">Bitcoin</span></td>
+                <td class="asset"><img src="./images/dot.png" alt=""> &nbsp; <span class="black">BTC</span> &nbsp; <span class="gray">Bitcoin</span></td>
                 <td class="lastprize"><span class="black">$39,410.10</span></td>
                 <td><span class="green">+0.61%</span></td>
-                <td><img src="./images/green.png" alt=""></td>
+                <td class="chart"><img src="./images/green.png" alt=""></td>
                 <td class="trade"><span class="black"><button id="buy">Buy</button></span></td>
             </tr>
             <tr class="onetr">
-                <td class="asset"><img src="./images/ada.png" alt=""> &nbsp; <span class="black">BTC</span> &nbsp; <span
-                        class="gray">Bitcoin</span></td>
+                <td class="asset"><img src="./images/ada.png" alt=""> &nbsp; <span class="black">BTC</span> &nbsp; <span class="gray">Bitcoin</span></td>
                 <td class="lastprize"><span class="black">$39,410.10</span></td>
                 <td><span class="green">+0.61%</span></td>
-                <td><img src="./images/green.png" alt=""></td>
+                <td class="chart"><img src="./images/green.png" alt=""></td>
                 <td class="trade"><button id="buy">Buy</button></td>
             </tr>
         </table>
@@ -254,9 +247,8 @@
             <div class="tradecryp">
                 <h2>Trade</h2>
 
-                <p>Trade crypto on the world's most powerful <br> exchange with tools for beginners, advanced <br>
-                    traders and
-                    institutions.</p>
+                <p>Trade crypto on the world's most powerful <br> exchange with tools for beginners, advanced <br> traders and institutions.
+                </p>
                 <a href="">Trade crypto &nbsp;<i class="fa-solid fa-angle-right"></i></a>
             </div>
             <br>
@@ -264,9 +256,8 @@
             <div class="tradecryp">
                 <h2>Trade</h2>
 
-                <p>Trade crypto on the world's most powerful <br> exchange with tools for beginners, advanced <br>
-                    traders and
-                    institutions.</p>
+                <p>Trade crypto on the world's most powerful <br> exchange with tools for beginners, advanced <br> traders and institutions.
+                </p>
                 <a href="">Trade crypto &nbsp;<i class="fa-solid fa-angle-right"></i></a>
             </div>
             <br>
@@ -274,9 +265,8 @@
             <div class="tradecryp">
                 <h2>Trade</h2>
 
-                <p>Trade crypto on the world's most powerful <br> exchange with tools for beginners, advanced <br>
-                    traders and
-                    institutions.</p>
+                <p>Trade crypto on the world's most powerful <br> exchange with tools for beginners, advanced <br> traders and institutions.
+                </p>
                 <a href="">Trade crypto &nbsp;<i class="fa-solid fa-angle-right"></i></a>
             </div>
 
@@ -322,9 +312,9 @@
             <h1>EARN UP TO $30 IN</h1>
             <h1>CRYPTO REWARDS</h1>
             <div class="inp">
-            <input type="text " placeholder="Email/phone">
-            <button class="getstarted1">GEt Started</button>
-        </div>
+                <input type="text " placeholder="Email/phone">
+                <button class="getstarted1">GEt Started</button>
+            </div>
             <br>
             <br>
             <p>Buy $100 or more in crypto on your first order and</p>
@@ -347,16 +337,16 @@
             <p>exchange in your pocket. Buy, sell and</p>
             <p>trade crypto on the go.</p>
             <p><i class="fa-solid fa-check"></i> &nbsp;View real-time cryptocurrency prices</p>
-            <p><i class="fa-solid fa-check"></i> &nbsp;Buy and sell BTC, ETH, XRP, OKB and other digital assets with
-                ease</p>
+            <p><i class="fa-solid fa-check"></i> &nbsp;Buy and sell BTC, ETH, XRP, OKB and other digital assets with ease
+            </p>
             <p><i class="fa-solid fa-check"></i> &nbsp;Get live price-change alerts for cryptocurrencies you follow</p>
             <p><i class="fa-solid fa-check"></i> &nbsp;Check BTC spot, futures and options prices</p>
             <p><i class="fa-solid fa-check"></i> &nbsp;Compare cryptocurrency prices across exchanges</p>
 
             <br>
-            <a href="#"><img src="./images/playicon.png" width="150px" alt=""></a>
-            <a href="#"><img src="./images/store.png" width="150px" alt=""></a>
-            <a href="#"><img src="./images/scane.png" width="80px" alt=""></a>
+            <a href="#"><img src="./images/playicon.png" width="150px" class="play" alt=""></a>
+            <a href="#"><img src="./images/store.png" width="150px" class="play" alt=""></a>
+            <a href="#"><img src="./images/scane.png" width="80px" class="scane" alt=""></a>
 
 
         </div>
@@ -441,7 +431,7 @@
                     <li>Historical Market Data</li>
                     <li>Fee schedule</li>
                     <li>Token listing</li>
-                    
+
                 </ul>
                 <ul>
                     <li class="blue">Support</li>
@@ -451,11 +441,28 @@
                     <li>Announcement</li>
                     <li>Community</li>
                     <li><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i></li>
-                   
+
                 </ul>
             </div>
 
             <br>
+
+            <div class="about">
+                <h4>About</h4>
+                <h4><i class="fa-solid fa-angle-down"></i></h4>
+            </div>
+            <div class="about">
+                <h4>Legal and privacy</h4>
+                <h4><i class="fa-solid fa-angle-down"></i></h4>
+            </div>
+            <div class="about">
+                <h4>Service</h4>
+                <h4><i class="fa-solid fa-angle-down"></i></h4>
+            </div>
+            <div class="about">
+                <h4>Support center</h4>
+                <h4><i class="fa-solid fa-angle-down"></i></h4>
+            </div>
             <br>
             <hr>
 
@@ -464,21 +471,14 @@
         </section>
 
         <div class="copy">
-            <p>Links: Bitcoin Bitcoin Exchange Bitcoin Price Bitcoin Wallet BTC Exchange BTC to INR Buy Bitcoin Buy
-                Crypto Buy Cryptocurrency Buy Ethereum Buy Litecoin(LTC) Cryptocurrency News Ethereum Price</p>
+            <p>Links: Bitcoin Bitcoin Exchange Bitcoin Price Bitcoin Wallet BTC Exchange BTC to INR Buy Bitcoin Buy Crypto Buy Cryptocurrency Buy Ethereum Buy Litecoin(LTC) Cryptocurrency News Ethereum Price</p>
         </div>
     </div>
 </body>
 
 <script src="app.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 
 </html>
